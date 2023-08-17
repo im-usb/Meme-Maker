@@ -1,0 +1,106 @@
+* {
+  font-family: "Preahvihear", sans-serif;
+}
+
+body {
+  /* text-align: center; */
+  box-sizing: border-box;
+  margin: 0;
+}
+
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: calc(100vh - 80px);
+}
+
+header h1 {
+  text-align: center;
+  font-size: 25px;
+}
+
+/* .draw-area {
+  height: calc(100vh - 300px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} */
+
+canvas {
+  width: 800px;
+  height: 500px;
+  border: solid 10px #b65d47;
+  border-radius: 20px;
+}
+
+.controls-row1 {
+  width: 100%;
+  margin: 0 0 10px 0;
+}
+
+.color-palette {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  row-gap: 10px;
+  column-gap: 10px;
+  justify-content: center;
+  margin: 0 0 40px 0;
+}
+
+.color-option {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: 0.5s ease;
+}
+
+.color-option:hover {
+  transform: scale(1.5);
+  transition: 0.5s ease;
+}
+
+input[type="range"] {
+  appearance: none;
+  -webkit-appearance: none;
+  background-color: #c5c5c5;
+  width: 100px;
+  height: 10px;
+  border-radius: 10px;
+  margin: 0 0 20px 0;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 30px;
+  height: 30px;
+  background: url("./images/pencil.svg");
+  background-color: rgb(160, 160, 160);
+  border-radius: 10px;
+}
+
+label {
+  font-size: 15px;
+}
+
+.controls-row3 {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+input[type="button"] {
+  font-size: 15px;
+  width: 60px;
+  color: #fff;
+  background-color: #9e319e;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 0;
+  cursor: pointer;
+}
