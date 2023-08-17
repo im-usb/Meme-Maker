@@ -88,10 +88,16 @@ label {
 }
 
 .controls-row3 {
-  width: 100%;
+  width: 80%;
   margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  justify-content: space-around;
+  grid-template-columns: auto auto;
+  row-gap: 10px;
+  column-gap: 10px;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  /* grid: auto auto auto; */
 }
 
 input[type="button"] {
