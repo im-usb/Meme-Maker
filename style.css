@@ -6,6 +6,7 @@ body {
   /* text-align: center; */
   box-sizing: border-box;
   margin: 0;
+  background-color: #4cd137;
 }
 
 main {
@@ -20,25 +21,28 @@ main {
 header h1 {
   text-align: center;
   font-size: 25px;
+  color: #fff;
 }
-
-/* .draw-area {
-  height: calc(100vh - 300px);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-} */
 
 canvas {
   width: 800px;
   height: 500px;
-  border: solid 10px #b65d47;
+  border: solid 10px #924c34;
+  border-radius: 20px;
+  box-shadow: 0 0 0 0;
+  background-color: #fff;
+}
+
+.controls {
+  width: 25%;
+  padding: 20px;
+  border: solid 1px black;
   border-radius: 20px;
 }
 
 .controls-row1 {
   width: 100%;
-  margin: 0 0 10px 0;
+  margin: 0 0 20px 0;
 }
 
 .color-palette {
@@ -88,16 +92,13 @@ label {
 }
 
 .controls-row3 {
-  width: 80%;
-  margin: 0 auto;
+  /* width: 80%; */
+  margin: 0 0 20px 0;
   display: grid;
-  justify-content: space-around;
-  grid-template-columns: auto auto;
+  justify-content: center;
+  grid-template-columns: 60px 60px;
   row-gap: 10px;
   column-gap: 10px;
-  grid-column-start: 1;
-  grid-column-end: 4;
-  /* grid: auto auto auto; */
 }
 
 input[type="button"] {
@@ -109,4 +110,24 @@ input[type="button"] {
   border-radius: 5px;
   padding: 5px 0;
   cursor: pointer;
+}
+
+input[type="file"]::-webkit-file-upload-button {
+  font-size: 15px;
+  font-family: "Preahvihear", sans-serif;
+  width: 100px;
+  color: #fff;
+  background-color: #9e319e;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 0;
+  cursor: pointer;
+  margin: 0 0 10px 0;
+}
+
+input[type="text"] {
+  width: 80%;
+  padding: 5px;
+  border-radius: 5px;
+  border: solid 1px #9e319e;
 }
